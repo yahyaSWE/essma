@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trygga Familjehem & Behandling – Landningssida</title>
+  <meta name="description" content="Vi matchar barn och unga med trygga familjehem och erbjuder professionellt stöd och behandling till både familjer och socialtjänst." />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- OBS: All egen styling är nu inline via style-attribut på elementen. -->
+</head>
+<body style="font-family: system-ui,-apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans'; color:#1f2937; background:#fff8f0;">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top" style="background:rgba(255,255,255,.75); backdrop-filter:saturate(180%) blur(10px); border-bottom:1px solid rgba(0,0,0,.06);">
+    <div class="container">
+      <a class="navbar-brand" href="#top" style="font-weight:800; letter-spacing:.2px; color:#2b6a6c;">TryggaFamiljehem</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Meny">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#tjanster" style="color:#1f2937;">Tjänster</a></li>
+          <li class="nav-item"><a class="nav-link" href="#process" style="color:#1f2937;">Så arbetar vi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kvalitet" style="color:#1f2937;">Kvalitet</a></li>
+          <li class="nav-item"><a class="nav-link" href="#om-oss" style="color:#1f2937;">Om oss</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontakt" style="color:#1f2937;">Kontakt</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-sm" href="#intresse" style="background:#2b6a6c; border-color:#2b6a6c; color:#fff;">Bli familjehem</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" class="hero" style="position:relative; min-height:80vh; display:grid; align-items:center; border-bottom-left-radius:1.25rem; border-bottom-right-radius:1.25rem; overflow:hidden; background-image:linear-gradient(120deg, rgba(43,106,108,.85), rgba(117,194,246,.55)), url('https://images.unsplash.com/photo-1604881982324-6133f2b805d6?q=80&w=1920&auto=format&fit=crop'); background-position:center; background-size:cover;">
+    <div class="container py-5" style="position:relative; z-index:2; color:#fff;">
+      <span class="mb-3 d-inline-block" style="padding:.35rem .75rem; border-radius:999px; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.25); font-size:.9rem;">Familjehem • Trygghet • Behandling</span>
+      <h1 class="display-4 fw-bold mb-3" style="line-height:1.1;">Trygga familjehem med professionellt stöd – för barn och unga som behöver mer.</h1>
+      <p class="fs-5 mb-4">Vi matchar barn och unga med kärleksfulla hem och erbjuder handledning, behandlingsinsatser och jour dygnet runt för både familjer och socialtjänst.</p>
+      <div class="d-flex gap-3 flex-wrap">
+        <a href="#intresse" class="btn btn-lg" style="background:#f4c95d; border-color:#f4c95d; color:#1a1a1a;"><i class="bi bi-house-heart me-1"></i> Bli familjehem</a>
+        <a href="#kontakt" class="btn btn-lg" style="background:rgba(255,255,255,.15); color:#fff; border:1px solid rgba(255,255,255,.35);"><i class="bi bi-envelope-open me-1"></i> Kontakta oss</a>
+      </div>
+      <div class="d-flex mt-4 flex-wrap" style="gap:1rem;">
+        <span style="background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.25); color:#fff; padding:.6rem .9rem; border-radius:999px; font-size:.95rem; display:flex; align-items:center; gap:.5rem;"><i class="bi bi-shield-check"></i> IVO‑tillstånd</span>
+        <span style="background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.25); color:#fff; padding:.6rem .9rem; border-radius:999px; font-size:.95rem; display:flex; align-items:center; gap:.5rem;"><i class="bi bi-clock-history"></i> Jour 24/7</span>
+        <span style="background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.25); color:#fff; padding:.6rem .9rem; border-radius:999px; font-size:.95rem; display:flex; align-items:center; gap:.5rem;"><i class="bi bi-geo"></i> Nationell räckvidd</span>
+        <span style="background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.25); color:#fff; padding:.6rem .9rem; border-radius:999px; font-size:.95rem; display:flex; align-items:center; gap:.5rem;"><i class="bi bi-magic"></i> Evidensbaserade metoder</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- INTRO / ABOUT SHORT -->
+  <section class="section" style="padding:4.5rem 0;">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <div class="p-4 p-lg-5" style="background:#ffffff; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+            <h2 class="mb-3" style="font-weight:800;">Vad är ett familjehem?</h2>
+            <p class="lead" style="color:#6b7280;">Ett familjehem tar emot barn eller unga som inte kan bo hemma under kortare eller längre tid. Vårt uppdrag är att skapa rätt förutsättningar i hemmet – trygghet, stabilitet och vardag med värme.</p>
+            <ul class="mt-3 mb-0">
+              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i> Noggrann utredning och matchning</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i> Handledning av erfarna behandlare</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i> Tätt samarbete med socialtjänst och nätverk</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="w-100" alt="Familj i vardagsrum som symboliserar tryggt familjehem" src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1920&auto=format&fit=crop" style="border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="tjanster" class="section" style="padding:4.5rem 0;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 style="font-weight:800;">Våra insatser</h2>
+        <p class="lead" style="color:#6b7280;">Helhetsstöd från första samtal till uppföljning – för familjer och för socialtjänst.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-4">
+          <div class="h-100 p-4" style="border:0; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+            <div class="mb-3" style="width:48px; height:48px; border-radius:12px; display:grid; place-items:center; background:linear-gradient(135deg, #75c2f6, #b9e3ff); color:#0b3a46; font-size:1.25rem;"><i class="bi bi-house-heart"></i></div>
+            <h5>Familjehem</h5>
+            <p>Trygga hem med utbildade familjer som erbjuder stabil vardag, struktur och omtanke. Kontinuerlig handledning ingår.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="h-100 p-4" style="border:0; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+            <div class="mb-3" style="width:48px; height:48px; border-radius:12px; display:grid; place-items:center; background:linear-gradient(135deg, #75c2f6, #b9e3ff); color:#0b3a46; font-size:1.25rem;"><i class="bi bi-lightning-charge"></i></div>
+            <h5>Jourhem</h5>
+            <p>Snabba och säkra placeringar när situationen är akut. Tillgängligt dygnet runt och med tät professionell uppbackning.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="h-100 p-4" style="border:0; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+            <div class="mb-3" style="width:48px; height:48px; border-radius:12px; display:grid; place-items:center; background:linear-gradient(135deg, #75c2f6, #b9e3ff); color:#0b3a46; font-size:1.25rem;"><i class="bi bi-people"></i></div>
+            <h5>Förstärkt stöd</h5>
+            <p>Extra insatser i hemmet, exempelvis behandlingsplan, skolstöd, nätverksarbete och kontaktperson.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="h-100 p-4" style="border:0; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+            <div class="mb-3" style="width:48px; height:48px; border-radius:12px; display:grid; place-items:center; background:linear-gradient(135deg, #75c2f6, #b9e3ff); color:#0b3a46; font-size:1.25rem;"><i class="bi bi-clipboard2-check"></i></div>
+            <h5>Utredning & matchning</h5>
+            <p>Strukturerad utredning enligt vedertagna modeller och noggrann matchning efter barnets behov och familjens förutsättningar.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="h-100 p-4" style="border:0; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+            <div class="mb-3" style="width:48px; height:48px; border-radius:12px; display:grid; place-items:center; background:linear-gradient(135deg, #75c2f6, #b9e3ff); color:#0b3a46; font-size:1.25rem;"><i class="bi bi-chat-square-heart"></i></div>
+            <h5>Handledning & behandling</h5>
+            <p>Regelbunden handledning och individuella behandlingsinsatser ledda av legitimerad personal och erfarna behandlare.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="h-100 p-4" style="border:0; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+            <div class="mb-3" style="width:48px; height:48px; border-radius:12px; display:grid; place-items:center; background:linear-gradient(135deg, #75c2f6, #b9e3ff); color:#0b3a46; font-size:1.25rem;"><i class="bi bi-mortarboard"></i></div>
+            <h5>Utbildning</h5>
+            <p>Grundutbildning för nya familjehem och fortbildning med fokus på anknytning, trauma och lågaffektivt bemötande.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="section" style="padding:4.5rem 0;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 style="font-weight:800;">Så arbetar vi – i fem steg</h2>
+        <p class="lead" style="color:#6b7280;">Tydlig och trygg process från första kontakt till hållbar placering.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-4">
+          <div class="h-100 p-4" style="border:0; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <div style="width:40px; height:40px; border-radius:999px; display:grid; place-items:center; background:#2b6a6c; color:#fff; font-weight:700;">1</div>
+              <h5 class="mb-0">Intresse & behov</h5>
+            </div>
+            <p>Vi lyssnar in er situation och beskriver hur vi kan hjälpa – som familj eller som uppdragsgivare.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="h-100 p-4" style="border:0; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <div style="width:40px; height:40px; border-radius:999px; display:grid; place-items:center; background:#2b6a6c; color:#fff; font-weight:700;">2</div>
+              <h5 class="mb-0">Första mötet</h5>
+            </div>
+            <p>Vi träffas digitalt eller på plats och går igenom förväntningar, förutsättningar och nästa steg.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="h-100 p-4" style="border:0; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <div style="width:40px; height:40px; border-radius:999px; display:grid; place-items:center; background:#2b6a6c; color:#fff; font-weight:700;">3</div>
+              <h5 class="mb-0">Utredning & utbildning</h5>
+            </div>
+            <p>Strukturerad utredning samt grundutbildning för familjehem inför ett uppdrag.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="h-100 p-4" style="border:0; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <div style="width:40px; height:40px; border-radius:999px; display:grid; place-items:center; background:#2b6a6c; color:#fff; font-weight:700;">4</div>
+              <h5 class="mb-0">Matchning & start</h5>
+            </div>
+            <p>Vi matchar efter behov och startar uppdraget med tät närvaro och tydlig plan.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="h-100 p-4" style="border:0; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <div style="width:40px; height:40px; border-radius:999px; display:grid; place-items:center; background:#2b6a6c; color:#fff; font-weight:700;">5</div>
+              <h5 class="mb-0">Uppföljning</h5>
+            </div>
+            <p>Löpande uppföljningar, dokumentation och justeringar för trygg och hållbar placering över tid.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIALTJÄNST / FÖR FAMILJER CTA -->
+  <section class="section" style="padding:4.5rem 0;">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <img class="w-100" alt="Socialsekreterare i samtal med familj" src="https://images.unsplash.com/photo-1523245310390-4f2d0b9215b5?q=80&w=1920&auto=format&fit=crop" style="border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);" />
+        </div>
+        <div class="col-lg-6">
+          <div class="p-4 p-lg-5" style="background:#ffffff; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+            <h3 class="mb-3">För socialtjänst</h3>
+            <p class="lead" style="color:#6b7280;">Vi erbjuder kvalitetssäkrade placeringar, snabb återkoppling och tydlig dokumentation. Våra familjer är utredda, utbildade och handleds av erfarna behandlare.</p>
+            <ul class="mb-4">
+              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i> Tillstånd hos IVO</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i> Förstärkta insatser vid behov</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i> Jour och akutplaceringar</li>
+            </ul>
+            <a href="#kontakt" class="btn" style="background:#2b6a6c; border-color:#2b6a6c; color:#fff;"><i class="bi bi-telephone me-1"></i> Begär platsförfrågan</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 align-items-center mt-4">
+        <div class="col-lg-6 order-lg-2">
+          <img class="w-100" alt="Familjehem kramar ett barn i hallen" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1920&auto=format&fit=crop" style="border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);" />
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-4 p-lg-5" id="intresse" style="background:#ffffff; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+            <h3 class="mb-3">För blivande familjehem</h3>
+            <p class="lead" style="color:#6b7280;">Vill ni göra skillnad? Vi ger er utbildning, handledning och stöd i vardagen – från första dag till sista.</p>
+            <ul class="mb-4">
+              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i> Ersättning och stöd varje månad</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i> Trygg process och nära kontakt</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-success me-2"></i> Gemenskap med andra familjehem</li>
+            </ul>
+            <a href="#kontakt" class="btn" style="background:#f4c95d; border-color:#f4c95d; color:#1a1a1a;"><i class="bi bi-house-add me-1"></i> Anmäl intresse</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KVALITET & ARBETSSÄTT -->
+  <section id="kvalitet" class="section" style="padding:4.5rem 0;">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5">
+          <h2 class="mb-3" style="font-weight:800;">Kvalitet & arbetssätt</h2>
+          <p class="lead" style="color:#6b7280;">Vårt kvalitetsarbete bygger på evidensbaserade metoder, kontinuerlig kompetensutveckling och systematiskt uppföljningsarbete.</p>
+          <ul class="mb-4">
+            <li class="mb-2"><i class="bi bi-graph-up-arrow text-success me-2"></i> Mätbara mål i vård- och genomförandeplan</li>
+            <li class="mb-2"><i class="bi bi-journal-check text-success me-2"></i> Tydlig dokumentation och återkoppling</li>
+            <li class="mb-2"><i class="bi bi-shield-lock text-success me-2"></i> Sekretess, GDPR och informationssäkerhet</li>
+          </ul>
+          <a href="#kontakt" class="btn" style="background:#2b6a6c; border-color:#2b6a6c; color:#fff;"><i class="bi bi-file-earmark-text me-1"></i> Begär policyunderlag</a>
+        </div>
+        <div class="col-lg-7">
+          <img class="w-100" alt="Team i handledningsmöte" src="https://images.unsplash.com/photo-1543269664-76bc3997d9ea?q=80&w=1920&auto=format&fit=crop" style="border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" style="padding:4.5rem 0;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 style="font-weight:800;">Vad andra säger</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="p-4 h-100" style="border:0; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+            <p class="fs-5">“Vi har alltid känt oss sedda och stöttade. Handledningen gav oss trygghet i svåra situationer.”</p>
+            <div class="d-flex align-items-center gap-3 mt-2">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=300&auto=format&fit=crop" alt="Familjehem i Småland" class="rounded-circle" width="48" height="48" />
+              <div>
+                <strong>Familjehem i Småland</strong><br><span class="text-muted">Uppdrag sedan 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 h-100" style="border:0; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+            <p class="fs-5">“Snabb återkoppling, tydlig dokumentation och en matchning som fungerade från start.”</p>
+            <div class="d-flex align-items-center gap-3 mt-2">
+              <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=300&auto=format&fit=crop" alt="Socialsekreterare" class="rounded-circle" width="48" height="48" />
+              <div>
+                <strong>Socialsekreterare</strong><br><span class="text-muted">Stockholm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OM OSS -->
+  <section id="om-oss" class="section" style="padding:4.5rem 0;">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <div class="p-4 p-lg-5" style="background:#ffffff; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+            <h2 class="mb-3" style="font-weight:800;">Vilka vi är</h2>
+            <p class="lead" style="color:#6b7280;">Ett engagerat team av socionomer, behandlare och handledare med lång erfarenhet från familjehemsvård och öppenvård. Vi tror på relationsskapande arbete, struktur och värme – alltid med barnets bästa i fokus.</p>
+            <div class="d-flex gap-3 flex-wrap mt-2">
+              <span style="display:inline-flex; align-items:center; gap:.5rem; color:#0b3a46; background:linear-gradient(135deg,#b9e3ff,#eaf7ff); border:0; padding:.6rem .9rem; border-radius:999px;"><i class="bi bi-patch-check"></i> Legitimerad personal</span>
+              <span style="display:inline-flex; align-items:center; gap:.5rem; color:#0b3a46; background:linear-gradient(135deg,#ffefc2,#fff7df); border:0; padding:.6rem .9rem; border-radius:999px;"><i class="bi bi-award"></i> Kvalitetssäkrade processer</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="w-100" alt="Teamfoto" src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1920&auto=format&fit=crop" style="border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="kontakt" class="section" style="padding:4.5rem 0;">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="h-100 p-4 p-lg-5" style="background:linear-gradient(180deg,#ffffff,#fbfbfb); border-radius:1.25rem;">
+            <h2 class="mb-3" style="font-weight:800;">Kontakta oss</h2>
+            <p class="lead" style="color:#6b7280;">Har du frågor, behöver platsförfrågan eller vill bli familjehem? Fyll i formuläret så återkommer vi snarast.</p>
+            <form class="mt-3">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label class="form-label">Namn</label>
+                  <input type="text" class="form-control" placeholder="För- och efternamn" required>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label">E‑post</label>
+                  <input type="email" class="form-control" placeholder="namn@exempel.se" required>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label">Telefon</label>
+                  <input type="tel" class="form-control" placeholder="070‑123 45 67">
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label">Jag är</label>
+                  <select class="form-select" aria-label="Roll">
+                    <option selected>Välj...</option>
+                    <option>Blivande familjehem</option>
+                    <option>Familjehem</option>
+                    <option>Socialtjänst</option>
+                    <option>Annan</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Meddelande</label>
+                  <textarea class="form-control" rows="4" placeholder="Berätta kort vad du behöver hjälp med"></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="gdpr">
+                    <label class="form-check-label" for="gdpr">Jag godkänner att mina uppgifter behandlas enligt GDPR för att hantera min förfrågan.</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn" style="background:#2b6a6c; color:#fff;">Skicka</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="h-100 p-4 p-lg-5" style="background:#ffffff; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+            <h3 class="mb-3">Besök & post</h3>
+            <p class="mb-1">Exempelgatan 12</p>
+            <p class="mb-1">111 22 Stockholm</p>
+            <p class="mb-4">Sverige</p>
+
+            <h3 class="mb-3">Kontaktuppgifter</h3>
+            <p class="mb-1"><i class="bi bi-telephone me-2"></i> 08‑12 34 56 78</p>
+            <p class="mb-1"><i class="bi bi-envelope me-2"></i> info@tryggafamiljehem.se</p>
+            <p class="mb-4"><i class="bi bi-clock me-2"></i> Mån–Fre 08:00–17:00 • Jour 24/7</p>
+
+            <h3 class="mb-3">Bankgiro & org.nr</h3>
+            <p class="mb-1">Bankgiro: 123‑4567</p>
+            <p class="mb-0">Org.nr: 5599xx‑xxxx</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="pt-5 pb-4 mt-5" style="background:#0f2022; color:#cfe8ee; border-top-left-radius:1.25rem; border-top-right-radius:1.25rem;">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <h5 class="mb-3" style="color:#e8f7ff;">TryggaFamiljehem</h5>
+          <p>Vi skapar trygga placeringar genom engagerade familjehem och professionellt stöd. Alltid med barnets bästa i fokus.</p>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h6 class="mb-3" style="color:#e8f7ff;">Snabblänkar</h6>
+          <ul class="list-unstyled">
+            <li><a href="#tjanster" style="color:#e8f7ff; text-decoration:none;">Tjänster</a></li>
+            <li><a href="#process" style="color:#e8f7ff; text-decoration:none;">Så arbetar vi</a></li>
+            <li><a href="#kvalitet" style="color:#e8f7ff; text-decoration:none;">Kvalitet</a></li>
+            <li><a href="#kontakt" style="color:#e8f7ff; text-decoration:none;">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-5">
+          <h6 class="mb-3" style="color:#e8f7ff;">Integritet</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" style="color:#e8f7ff; text-decoration:none;">Integritetspolicy</a></li>
+            <li><a href="#" style="color:#e8f7ff; text-decoration:none;">Cookies</a></li>
+            <li><a href="#" style="color:#e8f7ff; text-decoration:none;">Behandling av personuppgifter</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary border-opacity-25 my-4" />
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <small>© <span id="year"></span> TryggaFamiljehem – Alla rättigheter förbehållna</small>
+        <small>Org.nr 5599xx‑xxxx • IVO‑tillstånd</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Uppdatera årtal i footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll för interna länkar
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        const el = document.querySelector(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
+  </script>
+</body>
+</html>
