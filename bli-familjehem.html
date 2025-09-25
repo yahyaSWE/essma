@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bli familjehem – Ansökan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+<body style="font-family: system-ui,-apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans'; color:#1f2937; background:#fff8f0;">
+  <nav class="navbar navbar-expand-lg" style="background:#fff; border-bottom:1px solid rgba(0,0,0,.06);">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" style="font-weight:800; letter-spacing:.2px; color:#8A865D;">Tryggheten Familjehem</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Meny">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html#tjanster" style="color:#1f2937;">Tjänster</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#process" style="color:#1f2937;">Så arbetar vi</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#kvalitet" style="color:#1f2937;">Kvalitet</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#om-oss" style="color:#1f2937;">Om oss</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#kontakt" style="color:#1f2937;">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5" style="background:#f3f2e8; border-bottom:1px solid rgba(0,0,0,.06);">
+    <div class="container">
+      <h1 class="display-6" style="color:#4a4935;">Bli familjehem – Ansökan</h1>
+      <p class="mb-2" style="color:#4a4935;">Fyll i formuläret nedan. Fälten följer Socialstyrelsens BRA‑FAM struktur.</p>
+      <div class="mt-2" style="color:#4a4935; max-width:60ch;">
+        <p class="mb-1"><strong>Utdrag från Kronofogden:</strong> Beställ dokumentet som visar att du inte har skulder hos Kronofogden.
+        Ring <strong>0771‑73 73 00</strong> (Kundservice & växel) måndag–fredag <strong>09.00–15.00</strong> eller använd Kronofogdens e‑tjänster på
+        <a href="https://www.kronofogden.se/kontakta-oss/mejla-oss" style="color:#4a4935; text-decoration:underline;">mina sidor</a>.</p>
+        <p class="mb-0"><strong>Utdrag ur belastningsregistret:</strong> Beställ utdrag för arbete på HVB‑hem via
+        <a href="https://polisen.se/tjanster-tillstand/belastningsregistret/hvb-hem/" style="color:#4a4935; text-decoration:underline;">Polisen</a>.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <div id="apply-gate" class="p-4 p-lg-5 mb-4" style="background:#ffffff; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+        <h2 class="h4 mb-3">Har du gjort en utredning tidigare?</h2>
+        <div class="d-flex gap-3">
+          <button id="gate-yes" type="button" class="btn" style="background:#8A865D; color:#fff;">Ja</button>
+          <button id="gate-no" type="button" class="btn btn-outline" style="border:1px solid #8A865D; color:#4a4935;">Nej</button>
+        </div>
+      </div>
+
+      <form id="apply-form" action="https://formsubmit.co/johan.blomdahl90@gmail.com" method="POST" style="display:none;">
+        <input type="hidden" name="_subject" value="Ansökan – Bli familjehem">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="p-4 p-lg-5 mb-4" style="background:#ffffff; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+          <h2 class="h4 mb-3">Vilken typ av familjehem är du intresserad av att bli?</h2>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="form-check"><input class="form-check-input" type="checkbox" name="typ[]" value="Vanligt familjehem" id="typ1"><label class="form-check-label" for="typ1">Vanligt familjehem</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" name="typ[]" value="Släktinghem" id="typ2"><label class="form-check-label" for="typ2">Släktinghem</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" name="typ[]" value="Nätverkshem" id="typ3"><label class="form-check-label" for="typ3">Nätverkshem</label></div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-check"><input class="form-check-input" type="checkbox" name="typ[]" value="Jourhem" id="typ4"><label class="form-check-label" for="typ4">Jourhem</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" name="typ[]" value="Ej ännu bestämt" id="typ5"><label class="form-check-label" for="typ5">Ej ännu bestämt</label></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 p-lg-5 mb-4" style="background:#ffffff; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+          <h2 class="h4 mb-3">Kontaktuppgifter</h2>
+          <div class="row g-3">
+            <div class="col-md-6"><label class="form-label">Namn</label><input type="text" class="form-control" name="namn" required></div>
+            <div class="col-md-6"><label class="form-label">Personnummer</label><input type="text" class="form-control" name="personnummer" placeholder="ÅÅÅÅMMDD-XXXX"></div>
+            <div class="col-md-6 d-flex align-items-end gap-3">
+              <div class="form-check"><input class="form-check-input" type="radio" name="kon" value="Kvinna" id="kon1"><label class="form-check-label" for="kon1">Kvinna</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="kon" value="Man" id="kon2"><label class="form-check-label" for="kon2">Man</label></div>
+            </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-6"><label class="form-label">Adress</label><input type="text" class="form-control" name="adress"></div>
+            <div class="col-md-6"><label class="form-label">Postadress</label><input type="text" class="form-control" name="postadress"></div>
+            <div class="col-md-6"><label class="form-label">Telefon bostad</label><input type="tel" class="form-control" name="telefon_bostad"></div>
+            <div class="col-md-3"><label class="form-label">Arbete</label><input type="tel" class="form-control" name="telefon_arbete"></div>
+            <div class="col-md-3"><label class="form-label">Mobil</label><input type="tel" class="form-control" name="telefon_mobil"></div>
+            <div class="col-md-6"><label class="form-label">E‑post</label><input type="email" class="form-control" name="email" required></div>
+          </div>
+        </div>
+
+        <div class="p-4 p-lg-5 mb-4" style="background:#ffffff; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+          <h2 class="h4 mb-3">Del 1</h2>
+          <div class="mb-3">
+            <label class="form-label">1. Har du tidigare haft uppdrag för socialtjänsten?</label>
+            <div class="d-flex gap-3 flex-wrap">
+              <div class="form-check"><input class="form-check-input" type="radio" name="uppdrag_tidigare" value="Ja" id="uppdragJa"><label class="form-check-label" for="uppdragJa">Ja</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="uppdrag_tidigare" value="Nej" id="uppdragNej"><label class="form-check-label" for="uppdragNej">Nej</label></div>
+            </div>
+            <input type="text" class="form-control mt-2" name="uppdrag_beskrivning" placeholder="Om ja, vad">
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6"><label class="form-label">2. Ditt födelseland</label><input type="text" class="form-control" name="fodelseland"></div>
+            <div class="col-md-6">
+              <label class="form-label">3. Språk hemma</label>
+              <select class="form-select" name="sprak_hemma">
+                <option>Svenska</option>
+                <option>Svenska och annat språk</option>
+                <option>Annat språk</option>
+              </select>
+              <input type="text" class="form-control mt-2" name="sprak_ovrigt" placeholder="Om annat språk, vilket?">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">4. Högsta avslutade utbildning</label>
+              <select class="form-select" name="utbildning">
+                <option>Grundskola</option>
+                <option>Gymnasieskola eller motsvarande</option>
+                <option>Högskola</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">5. Sysselsättning</label>
+              <select class="form-select" name="sysselsattning">
+                <option>Arbetar</option>
+                <option>Studerar</option>
+                <option>Föräldraledig</option>
+                <option>Korttidssjukskriven</option>
+                <option>Långtidssjukskriven/förtidspensionerad</option>
+                <option>Arbetssökande</option>
+                <option>Annan</option>
+              </select>
+              <input type="text" class="form-control mt-2" name="sysselsattning_annan" placeholder="Annan, nämligen…">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">6. Civilstånd</label>
+              <div class="d-flex gap-3 flex-wrap">
+                <div class="form-check"><input class="form-check-input" type="radio" name="civilstand" value="gift/sambo" id="civil1"><label class="form-check-label" for="civil1">gift/sambo</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="civilstand" value="särbo" id="civil2"><label class="form-check-label" for="civil2">särbo</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="civilstand" value="ensamstående" id="civil3"><label class="form-check-label" for="civil3">ensamstående</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="civilstand" value="skild/separerad" id="civil4"><label class="form-check-label" for="civil4">skild/separerad</label></div>
+              </div>
+            </div>
+            <div class="col-md-3"><label class="form-label">7. Gift/sammanboende sedan (år)</label><input type="text" class="form-control" name="gift_sedan"></div>
+            <div class="col-md-3"><label class="form-label">8. Skild/separerad sedan (år)</label><input type="text" class="form-control" name="skild_sedan"></div>
+            <div class="col-md-6">
+              <label class="form-label">9. Husdjur</label>
+              <div class="d-flex gap-3 flex-wrap">
+                <div class="form-check"><input class="form-check-input" type="radio" name="husdjur" value="Ja" id="husdjurJa"><label class="form-check-label" for="husdjurJa">Ja</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="husdjur" value="Nej" id="husdjurNej"><label class="form-check-label" for="husdjurNej">Nej</label></div>
+              </div>
+              <input type="text" class="form-control mt-2" name="husdjur_typ" placeholder="Om ja, vilket/vilka?">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">10. Röker någon i familjen?</label>
+              <div class="d-flex gap-3 flex-wrap">
+                <div class="form-check"><input class="form-check-input" type="radio" name="roking" value="Ja" id="rokJa"><label class="form-check-label" for="rokJa">Ja</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="roking" value="Nej" id="rokNej"><label class="form-check-label" for="rokNej">Nej</label></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">11. Har du barn?</label>
+              <div class="d-flex gap-3 flex-wrap">
+                <div class="form-check"><input class="form-check-input" type="radio" name="har_barn" value="Ja" id="harBarnJa"><label class="form-check-label" for="harBarnJa">Ja</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="har_barn" value="Nej" id="harBarnNej"><label class="form-check-label" for="harBarnNej">Nej</label></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">12. Har du barn som bor hemma (även växelvis boende)?</label>
+              <div class="d-flex gap-3 flex-wrap">
+                <div class="form-check"><input class="form-check-input" type="radio" name="barn_bor_hemma" value="Ja" id="barnHemJa"><label class="form-check-label" for="barnHemJa">Ja</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="barn_bor_hemma" value="Nej" id="barnHemNej"><label class="form-check-label" for="barnHemNej">Nej</label></div>
+              </div>
+              <div class="row g-3 mt-2">
+                <div class="col-12"><strong>a) egna barn</strong></div>
+                <div class="col-md-3"><label class="form-label">flicka antal</label><input type="number" min="0" class="form-control" name="egna_flicka_antal"></div>
+                <div class="col-md-9"><label class="form-label">född/-a år</label><input type="text" class="form-control" name="egna_flicka_fodd_ar" placeholder="t.ex. 2012, 2015"></div>
+                <div class="col-md-3"><label class="form-label">pojke antal</label><input type="number" min="0" class="form-control" name="egna_pojke_antal"></div>
+                <div class="col-md-9"><label class="form-label">född/-a år</label><input type="text" class="form-control" name="egna_pojke_fodd_ar" placeholder="t.ex. 2010, 2018"></div>
+                <div class="col-12 mt-2"><strong>b) styvbarn/partners barn</strong></div>
+                <div class="col-md-3"><label class="form-label">flicka antal</label><input type="number" min="0" class="form-control" name="styv_flicka_antal"></div>
+                <div class="col-md-9"><label class="form-label">född/-a år</label><input type="text" class="form-control" name="styv_flicka_fodd_ar"></div>
+                <div class="col-md-3"><label class="form-label">pojke antal</label><input type="number" min="0" class="form-control" name="styv_pojke_antal"></div>
+                <div class="col-md-9"><label class="form-label">född/-a år</label><input type="text" class="form-control" name="styv_pojke_fodd_ar"></div>
+                <div class="col-12 mt-2"><strong>c) placerade barn</strong></div>
+                <div class="col-md-3"><label class="form-label">flicka antal</label><input type="number" min="0" class="form-control" name="placerade_flicka_antal"></div>
+                <div class="col-md-9"><label class="form-label">född/-a år</label><input type="text" class="form-control" name="placerade_flicka_fodd_ar"></div>
+                <div class="col-md-3"><label class="form-label">pojke antal</label><input type="number" min="0" class="form-control" name="placerade_pojke_antal"></div>
+                <div class="col-md-9"><label class="form-label">född/-a år</label><input type="text" class="form-control" name="placerade_pojke_fodd_ar"></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">13. Har du vårdnaden om barn som inte bor hemma?</label>
+              <div class="d-flex gap-3 flex-wrap">
+                <div class="form-check"><input class="form-check-input" type="radio" name="vardnad_barn_ej_hemma" value="Ja" id="vardnadJa"><label class="form-check-label" for="vardnadJa">Ja</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="vardnad_barn_ej_hemma" value="Nej" id="vardnadNej"><label class="form-check-label" for="vardnadNej">Nej</label></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">14. Har du umgängesrätt med barn som inte bor hemma?</label>
+              <div class="d-flex gap-3 flex-wrap">
+                <div class="form-check"><input class="form-check-input" type="radio" name="umgangesratt_barn_ej_hemma" value="Ja" id="umgJa"><label class="form-check-label" for="umgJa">Ja</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="umgangesratt_barn_ej_hemma" value="Nej" id="umgNej"><label class="form-check-label" for="umgNej">Nej</label></div>
+              </div>
+            </div>
+            <div class="col-md-6"><label class="form-label">15. Boende</label>
+              <select class="form-select" name="boende">
+                <option>lägenhet</option>
+                <option>radhus/kedjehus/villa</option>
+                <option>hus på landet</option>
+              </select>
+            </div>
+            <div class="col-md-3"><label class="form-label">16. Antal rum</label><input type="number" class="form-control" name="antal_rum" min="0"></div>
+            <div class="col-md-3"><label class="form-label">17. Eget rum för barn?</label>
+              <select class="form-select" name="eget_rum">
+                <option>Ja</option>
+                <option>Nej</option>
+              </select>
+            </div>
+            <div class="col-md-6"><label class="form-label">18. Trygg och säker miljö?</label>
+              <select class="form-select" name="trygg_miljo">
+                <option>Ja</option>
+                <option>Nej</option>
+              </select>
+            </div>
+            <div class="col-12"><label class="form-label">19. Hur långt är det till (ange i km eller avstånd i tid)?</label></div>
+            <div class="col-md-6"><label class="form-label">förskola/skola</label><input type="text" class="form-control" name="avstand_forskola_skola" placeholder="t.ex. 2 km eller 10 min"></div>
+            <div class="col-md-6"><label class="form-label">allmänna kommunikationer</label><input type="text" class="form-control" name="avstand_kommunikationer" placeholder="t.ex. 500 m eller 5 min"></div>
+            <div class="col-md-6"><label class="form-label">vårdcentral</label><input type="text" class="form-control" name="avstand_vardcentral" placeholder="t.ex. 3 km eller 12 min"></div>
+            <div class="col-md-6"><label class="form-label">service (t.ex. mataffär)</label><input type="text" class="form-control" name="avstand_service" placeholder="t.ex. 1 km eller 7 min"></div>
+          </div>
+        </div>
+
+        <div class="p-4 p-lg-5 mb-4" style="background:#ffffff; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+          <h2 class="h4 mb-3">Del 2</h2>
+          <div class="row g-3">
+            <div class="col-12">
+              <label class="form-label">20. a) Har du eller har du haft fysiska besvär eller någon fysisk sjukdom under de senaste fem åren (t.ex. ryggsmärtor, migrän, diabetes eller liknande)?</label>
+              <div class="d-flex gap-3 flex-wrap">
+                <div class="form-check"><input class="form-check-input" type="radio" name="fysiska_besvar" value="Ja" id="fysJa"><label class="form-check-label" for="fysJa">Ja</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="fysiska_besvar" value="Nej" id="fysNej"><label class="form-check-label" for="fysNej">Nej</label></div>
+              </div>
+              <input type="text" class="form-control mt-2" name="fysiska_besvar_typ" placeholder="Om ja, vad för slags besvär eller sjukdom?">
+              <label class="form-label mt-3">20. b) Har du fått eller får du behandling för dina fysiska besvär eller din fysiska sjukdom?</label>
+              <div class="d-flex gap-3 flex-wrap">
+                <div class="form-check"><input class="form-check-input" type="radio" name="fysiska_behandling" value="Ja" id="fysBehJa"><label class="form-check-label" for="fysBehJa">Ja</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="fysiska_behandling" value="Nej" id="fysBehNej"><label class="form-check-label" for="fysBehNej">Nej</label></div>
+              </div>
+              <label class="form-label mt-3">20. c) Har du varit sjukskriven någon period de senaste fem åren för dina fysiska besvär eller din fysiska sjukdom?</label>
+              <div class="d-flex gap-3 flex-wrap">
+                <div class="form-check"><input class="form-check-input" type="radio" name="fysiska_sjukskriven" value="Ja" id="fysSjukJa"><label class="form-check-label" for="fysSjukJa">Ja</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="fysiska_sjukskriven" value="Nej" id="fysSjukNej"><label class="form-check-label" for="fysSjukNej">Nej</label></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">21. a) Har du eller har du haft psykiska besvär eller någon psykisk sjukdom under de senaste fem åren (t.ex. sömnlöshet, depression, ångest eller liknande)?</label>
+              <div class="d-flex gap-3 flex-wrap">
+                <div class="form-check"><input class="form-check-input" type="radio" name="psykiska_besvar" value="Ja" id="psyJa"><label class="form-check-label" for="psyJa">Ja</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="psykiska_besvar" value="Nej" id="psyNej"><label class="form-check-label" for="psyNej">Nej</label></div>
+              </div>
+              <input type="text" class="form-control mt-2" name="psykiska_besvar_typ" placeholder="Om ja, vad för slags besvär eller sjukdom?">
+              <label class="form-label mt-3">21. b) Har du fått eller får du behandling för dina psykiska besvär eller din psykiska sjukdom?</label>
+              <div class="d-flex gap-3 flex-wrap">
+                <div class="form-check"><input class="form-check-input" type="radio" name="psykiska_behandling" value="Ja" id="psyBehJa"><label class="form-check-label" for="psyBehJa">Ja</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="psykiska_behandling" value="Nej" id="psyBehNej"><label class="form-check-label" for="psyBehNej">Nej</label></div>
+              </div>
+              <label class="form-label mt-3">21. c) Har du varit sjukskriven under någon period de senaste fem åren för dina psykiska besvär eller din psykiska sjukdom?</label>
+              <div class="d-flex gap-3 flex-wrap">
+                <div class="form-check"><input class="form-check-input" type="radio" name="psykiska_sjukskriven" value="Ja" id="psySjukJa"><label class="form-check-label" for="psySjukJa">Ja</label></div>
+                <div class="form-check"><input class="form-check-input" type="radio" name="psykiska_sjukskriven" value="Nej" id="psySjukNej"><label class="form-check-label" for="psySjukNej">Nej</label></div>
+              </div>
+            </div>
+            <div class="col-12"><label class="form-label">22. Aktuell inom socialtjänsten?</label><div class="d-flex gap-3 flex-wrap"><div class="form-check"><input class="form-check-input" type="radio" name="aktuell_socialtjanst" value="Ja" id="socJa"><label class="form-check-label" for="socJa">Ja</label></div><div class="form-check"><input class="form-check-input" type="radio" name="aktuell_socialtjanst" value="Nej" id="socNej"><label class="form-check-label" for="socNej">Nej</label></div></div><input type="text" class="form-control mt-2" name="aktuell_socialtjanst_beskrivning" placeholder="Om ja, för vad och när?"></div>
+            <div class="col-12"><label class="form-label">23. Dömd för brott?</label><div class="d-flex gap-3 flex-wrap"><div class="form-check"><input class="form-check-input" type="radio" name="domd_brott" value="Ja" id="brottJa"><label class="form-check-label" for="brottJa">Ja</label></div><div class="form-check"><input class="form-check-input" type="radio" name="domd_brott" value="Nej" id="brottNej"><label class="form-check-label" for="brottNej">Nej</label></div></div><input type="text" class="form-control mt-2" name="brott_typ" placeholder="Om ja, typ av brott och när"></div>
+            <div class="col-12"><label class="form-label">24. Avstå alkohol vid behov?</label><div class="d-flex gap-3 flex-wrap"><div class="form-check"><input class="form-check-input" type="radio" name="avsta_alkohol" value="Ja" id="alkJa"><label class="form-check-label" for="alkJa">Ja</label></div><div class="form-check"><input class="form-check-input" type="radio" name="avsta_alkohol" value="Nej" id="alkNej"><label class="form-check-label" for="alkNej">Nej</label></div><div class="form-check"><input class="form-check-input" type="radio" name="avsta_alkohol" value="Dricker ej alkohol" id="alkEj"><label class="form-check-label" for="alkEj">Dricker ej alkohol</label></div></div></div>
+            <div class="col-12"><label class="form-label">25. Använt droger (5 år)?</label><div class="d-flex gap-3 flex-wrap"><div class="form-check"><input class="form-check-input" type="radio" name="droger" value="Ja" id="drogerJa"><label class="form-check-label" for="drogerJa">Ja</label></div><div class="form-check"><input class="form-check-input" type="radio" name="droger" value="Nej" id="drogerNej"><label class="form-check-label" for="drogerNej">Nej</label></div></div></div>
+            <div class="col-12"><label class="form-label">26. Använt mer medicin än ordinerat?</label><div class="d-flex gap-3 flex-wrap"><div class="form-check"><input class="form-check-input" type="radio" name="medicin_mer" value="Ja" id="medJa"><label class="form-check-label" for="medJa">Ja</label></div><div class="form-check"><input class="form-check-input" type="radio" name="medicin_mer" value="Nej" id="medNej"><label class="form-check-label" for="medNej">Nej</label></div><div class="form-check"><input class="form-check-input" type="radio" name="medicin_mer" value="Ej aktuellt" id="medEj"><label class="form-check-label" for="medEj">Ej aktuellt</label></div></div></div>
+            <div class="col-12"><label class="form-label">27. Förekommit våld i nuvarande familj?</label><div class="d-flex gap-3 flex-wrap"><div class="form-check"><input class="form-check-input" type="radio" name="vald_familj" value="Ja" id="valdJa"><label class="form-check-label" for="valdJa">Ja</label></div><div class="form-check"><input class="form-check-input" type="radio" name="vald_familj" value="Nej" id="valdNej"><label class="form-check-label" for="valdNej">Nej</label></div></div><input type="text" class="form-control mt-2" name="vald_typ" placeholder="Om ja, typ av våld"></div>
+          </div>
+        </div>
+
+        <div class="p-4 p-lg-5 mb-4" style="background:#ffffff; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+          <h2 class="h4 mb-3">Del 3</h2>
+          <p class="mb-2">28. Skäl till att vilja bli familjehem</p>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="form-check"><input class="form-check-input" type="checkbox" name="skal[]" value="Göra en insats" id="sk1"><label class="form-check-label" for="sk1">Jag vill göra en insats för utsatta barn</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" name="skal[]" value="Arbeta hemma" id="sk2"><label class="form-check-label" for="sk2">Jag ser det som en möjlighet att arbeta hemma</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" name="skal[]" value="Barn flyttat" id="sk3"><label class="form-check-label" for="sk3">Mina egna barn har flyttat hemifrån</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" name="skal[]" value="Ersättning" id="sk4"><label class="form-check-label" for="sk4">Den ekonomiska ersättningen</label></div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-check"><input class="form-check-input" type="checkbox" name="skal[]" value="Relation till barnet" id="sk5"><label class="form-check-label" for="sk5">Jag har redan en relation till barnet</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" name="skal[]" value="Kan inte få barn" id="sk6"><label class="form-check-label" for="sk6">Jag kan inte få egna barn</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" name="skal[]" value="Själv varit placerad" id="sk7"><label class="form-check-label" for="sk7">Jag har själv varit placerad</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" name="skal[]" value="Förlorat barn" id="sk8"><label class="form-check-label" for="sk8">Jag har förlorat ett barn</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" name="skal[]" value="Religiösa värderingar" id="sk9"><label class="form-check-label" for="sk9">Jag vill följa mina religiösa värderingar</label></div>
+            </div>
+          </div>
+          <div class="row g-3 mt-2">
+            <div class="col-md-6"><label class="form-label">29. Vill även din partner vara familjehemsförälder?</label><select class="form-select" name="partner_vilja"><option>Ja</option><option>Nej</option><option>Vet ej</option><option>Ej aktuellt</option></select></div>
+            <div class="col-md-6"><label class="form-label">30. Är dina hemmaboende barn positiva till att ta emot ett barn?</label><select class="form-select" name="barn_positiva"><option>Ja</option><option>Nej</option><option>Vet ej</option><option>Ej aktuellt</option></select></div>
+            <div class="col-12"><label class="form-label">31. Har du någon som kan ställa upp för dig när du behöver stöd och hjälp (t.ex. förälder eller granne)?</label><div class="d-flex gap-3 flex-wrap"><div class="form-check"><input class="form-check-input" type="radio" name="stod_hjalp" value="Ja" id="stodJa"><label class="form-check-label" for="stodJa">Ja</label></div><div class="form-check"><input class="form-check-input" type="radio" name="stod_hjalp" value="Nej" id="stodNej"><label class="form-check-label" for="stodNej">Nej</label></div></div></div>
+            <div class="col-12"><label class="form-label">Om ja, vem/vilka?</label><input type="text" class="form-control" name="stod_hjalp_vem" placeholder="Ange namn/relation"></div>
+            <div class="col-12"><label class="form-label">32. Är du på fritiden aktiv i någon organisation eller förening?</label><div class="d-flex gap-3 flex-wrap"><div class="form-check"><input class="form-check-input" type="radio" name="aktiv_org" value="Ja" id="aktivJa"><label class="form-check-label" for="aktivJa">Ja</label></div><div class="form-check"><input class="form-check-input" type="radio" name="aktiv_org" value="Nej" id="aktivNej"><label class="form-check-label" for="aktivNej">Nej</label></div></div></div>
+            <div class="col-12"><label class="form-label">Om ja, vilken/vilka?</label><input type="text" class="form-control" name="aktiv_org_vilka" placeholder="Förening/organisation"></div>
+            <div class="col-12"><label class="form-label">33. Många familjer har regler, har ni regler i din familj?</label><div class="d-flex gap-3 flex-wrap"><div class="form-check"><input class="form-check-input" type="radio" name="regler_finns" value="Ja" id="reglerJa"><label class="form-check-label" for="reglerJa">Ja</label></div><div class="form-check"><input class="form-check-input" type="radio" name="regler_finns" value="Nej" id="reglerNej"><label class="form-check-label" for="reglerNej">Nej</label></div></div></div>
+            <div class="col-12"><label class="form-label">Om ja, ge exempel på regler som ni har (ange gärna flera exempel)</label><textarea class="form-control" name="regler_exempel" rows="3" placeholder="Exempel på regler"></textarea></div>
+          </div>
+          <div class="mt-3">
+            <label class="form-label">34. Strategier för vägledning och gränssättning</label>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="d-flex justify-content-between align-items-center mb-2"><span>a. Jag tillrättavisar hellre än berömmer</span><select class="form-select w-auto" name="strategi_a"><option>Ja</option><option>Nej</option></select></div>
+                <div class="d-flex justify-content-between align-items-center mb-2"><span>b. Få barnet att förstå konsekvenser</span><select class="form-select w-auto" name="strategi_b"><option>Ja</option><option>Nej</option></select></div>
+                <div class="d-flex justify-content-between align-items-center mb-2"><span>c. Belönar gott uppförande</span><select class="form-select w-auto" name="strategi_c"><option>Ja</option><option>Nej</option></select></div>
+                <div class="d-flex justify-content-between align-items-center mb-2"><span>d. Kan ruska om/ta tag i barnet</span><select class="form-select w-auto" name="strategi_d"><option>Ja</option><option>Nej</option></select></div>
+                <div class="d-flex justify-content-between align-items-center mb-2"><span>e. Ignorerar dåligt uppförande</span><select class="form-select w-auto" name="strategi_e"><option>Ja</option><option>Nej</option></select></div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex justify-content-between align-items-center mb-2"><span>f. Tillrättavisar utifrån egen upplevelse</span><select class="form-select w-auto" name="strategi_f"><option>Ja</option><option>Nej</option></select></div>
+                <div class="d-flex justify-content-between align-items-center mb-2"><span>g. Fysisk bestraffning</span><select class="form-select w-auto" name="strategi_g"><option>Ja</option><option>Nej</option></select></div>
+                <div class="d-flex justify-content-between align-items-center mb-2"><span>h. Förutbestämda regler</span><select class="form-select w-auto" name="strategi_h"><option>Ja</option><option>Nej</option></select></div>
+                <div class="d-flex justify-content-between align-items-center mb-2"><span>i. Partner ansvarar för uppfostran</span><select class="form-select w-auto" name="strategi_i"><option>Ja</option><option>Nej</option></select></div>
+                <div class="d-flex justify-content-between align-items-center mb-2"><span>j. Hotar med bestraffning senare</span><select class="form-select w-auto" name="strategi_j"><option>Ja</option><option>Nej</option></select></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 p-lg-5 mb-4" style="background:#ffffff; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+          <h2 class="h4 mb-3">Del 4 – Skola/utbildning</h2>
+          <div class="row g-3">
+            <div class="col-md-4"><label class="form-label">35. Är du beredd att ha kontinuerlig kontakt med skolan för att underlätta barnets skolgång?</label><select class="form-select" name="skola_kontinuerlig_kontakt"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="skola_kontinuerlig_kontakt_motivering" rows="2" placeholder="Motivera gärna ditt svar"></textarea></div>
+            <div class="col-md-4"><label class="form-label">36. Är du beredd att visa upp en positiv inställning till skolan och skolans regler inför barnet?</label><select class="form-select" name="skola_positiv"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="skola_positiv_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+            <div class="col-md-4"><label class="form-label">37. Är du beredd att stödja och uppmuntra barnet att fortsätta på gymnasiet?</label><select class="form-select" name="skola_gymnasiet"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="skola_gymnasiet_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+            <div class="col-md-4"><label class="form-label">38. Är du beredd att ägna tid åt läxläsning med barnet?</label><select class="form-select" name="skola_laxer"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="skola_laxer_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+            <div class="col-md-4"><label class="form-label">39. Är du beredd att aktivt stödja och uppmuntra barnets skolarbete?</label><select class="form-select" name="skola_stod"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="skola_stod_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+            <div class="col-md-4"><label class="form-label">40. Är du beredd att se till att barnet vid behov får stödundervisning?</label><select class="form-select" name="skola_stodundervisning"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="skola_stodundervisning_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+          </div>
+        </div>
+
+        <div class="p-4 p-lg-5 mb-4" style="background:#ffffff; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+          <h2 class="h4 mb-3">Del 5 – Placerade barns fysiska och psykiska hälsa</h2>
+          <div class="row g-3">
+            <div class="col-md-4"><label class="form-label">41. Är du beredd att ansvara för att barnet får kontinuerlig förebyggande barn- och skolhälsovård (t ex. BVC)?</label><select class="form-select" name="halsa_forebyggande"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="halsa_forebyggande_motivering" rows="2" placeholder="Motivera gärna ditt svar"></textarea></div>
+            <div class="col-md-4"><label class="form-label">42. Är du beredd att ansvara för att barnet får hälsovård, sjukvård och tandvård?</label><select class="form-select" name="halsa_vard"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="halsa_vard_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+            <div class="col-md-4"><label class="form-label">43. Är du beredd att spara handlingar och information om barnets tandvård samt hälso- och sjukvård (vaccinationskort etc.)?</label><select class="form-select" name="halsa_handlingar"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="halsa_handlingar_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+            <div class="col-md-4"><label class="form-label">44. Är du beredd att ansvara för att barnet får bra mat- och levnadsvanor under placeringen?</label><select class="form-select" name="halsa_vanor"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="halsa_vanor_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+          </div>
+        </div>
+
+        <div class="p-4 p-lg-5 mb-4" style="background:#ffffff; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+          <h2 class="h4 mb-3">Del 6 – Tonårsföräldraskap</h2>
+          <div class="row g-3">
+            <div class="col-md-6"><label class="form-label">45. Är du beredd att ansvara för att ungdomen får sexualupplysning (t ex. information om riskfyllt sexuellt beteende)?</label><select class="form-select" name="tonar_sexualupplysning"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="tonar_sexualupplysning_motivering" rows="2" placeholder="Motivera gärna ditt svar"></textarea></div>
+            <div class="col-md-6"><label class="form-label">46. Är du beredd att ansvara för att ungdomen vid behov får preventivmedelsrådgivning?</label><select class="form-select" name="tonar_preventiv"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="tonar_preventiv_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+          </div>
+        </div>
+
+        <div class="p-4 p-lg-5 mb-4" style="background:#ffffff; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+          <h2 class="h4 mb-3">Del 7 – Kontakten med socialtjänsten</h2>
+          <div class="row g-3">
+            <div class="col-md-6"><label class="form-label">47. Är du beredd att arbeta för ett gott samarbete med socialtjänsten under tiden som barnet är placerat hos dig?</label><select class="form-select" name="soc_samarbete"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="soc_samarbete_motivering" rows="2" placeholder="Motivera gärna ditt svar"></textarea></div>
+            <div class="col-md-6"><label class="form-label">48. Ser du det som självklart att kontakta socialtjänsten för att få hjälp och stöd om det skulle uppstå några problem?</label><select class="form-select" name="soc_kontakta"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="soc_kontakta_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+            <div class="col-md-6"><label class="form-label">49. Är du beredd att avsätta tid för att delta i utbildning/handledning i familjehemsarbetet?</label><select class="form-select" name="soc_utbildning"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="soc_utbildning_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+            <div class="col-md-6"><label class="form-label">50. Tror du att du har förmåga att inse när du behöver hjälp av socialtjänsten?</label><select class="form-select" name="soc_be_om_hjalp"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="soc_be_om_hjalp_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+            <div class="col-md-6"><label class="form-label">51. Har du förtroende för socialtjänstens förmåga att lösa problem?</label><select class="form-select" name="soc_fortroende"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="soc_fortroende_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+            <div class="col-md-6"><label class="form-label">52. Har du problem med att familjehemssekreteraren talar om för dig hur du ska vara som familjehemsförälder?</label><select class="form-select" name="soc_problem_anvisning"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="soc_problem_anvisning_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+          </div>
+        </div>
+
+        <div class="p-4 p-lg-5 mb-4" style="background:#ffffff; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+          <h2 class="h4 mb-3">Del 8 – Placerade barns biologiska/ursprungsfamilj</h2>
+          <div class="row g-3">
+            <div class="col-md-6"><label class="form-label">53. Är du beredd att samarbeta med de biologiska/ursprungsföräldrarna om det ingår i uppdraget, även om det medför påfrestningar för dig eller barnet?</label><select class="form-select" name="bio_samarbeta"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="bio_samarbeta_motivering" rows="2" placeholder="Motivera gärna ditt svar"></textarea></div>
+            <div class="col-md-6"><label class="form-label">54. Kan du hjälpa barnet med relationerna till sina biologiska/ursprungsföräldrar?</label><select class="form-select" name="bio_relationer"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="bio_relationer_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+            <div class="col-md-6"><label class="form-label">55. Är du beredd att undvika att tala illa om de biologiska/ursprungsföräldrarna oberoende av din och barnets inställning och relation till dem?</label><select class="form-select" name="bio_inte_tala_illa"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="bio_inte_tala_illa_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+            <div class="col-md-6"><label class="form-label">56. Är du beredd att hjälpa barnet att hantera sina känslor i samband med besök hos de biologiska/ursprungsföräldrarna?</label><select class="form-select" name="bio_hantera_kanslor"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="bio_hantera_kanslor_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+            <div class="col-md-6"><label class="form-label">57. Är du beredd att prata med barnet om den eventuella oro han/hon har för att flytta tillbaka till sina biologiska/ursprungsföräldrar?</label><select class="form-select" name="bio_prata_oro"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="bio_prata_oro_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+          </div>
+        </div>
+
+        <div class="p-4 p-lg-5 mb-4" style="background:#ffffff; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+          <h2 class="h4 mb-3">Del 9 – Placerade barns biologiska syskon och andra nära anhöriga</h2>
+          <div class="row g-3">
+            <div class="col-md-6"><label class="form-label">58. Är du beredd att stödja barnet i sin relation med syskon och släkt?</label><select class="form-select" name="syskon_stod"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="syskon_stod_motivering" rows="2" placeholder="Motivera gärna ditt svar"></textarea></div>
+            <div class="col-md-6"><label class="form-label">59. Är du beredd att finnas kvar som stöd åt barnet även efter att han/hon har flyttat ifrån din familj?</label><select class="form-select" name="syskon_finnas_kvar"><option>Ja</option><option>Nej</option><option>Osäker</option></select><textarea class="form-control mt-2" name="syskon_finnas_kvar_motivering" rows="2" placeholder="Motivera gärna"></textarea></div>
+          </div>
+        </div>
+
+        <div class="text-end">
+          <button type="submit" class="btn btn-lg" style="background:#8A865D; color:#fff;">Skicka ansökan</button>
+          <div id="apply-status" class="mt-3" style="display:none;"></div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="pt-5 pb-4 mt-5" style="background:#0f2022; color:#cfe8ee;">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <small>© <span id="year"></span> Tryggheten Familjehem</small>
+      <small>IVO‑tillstånd</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Gate question logic
+    const applyForm = document.getElementById('apply-form');
+    const applyStatus = document.getElementById('apply-status');
+    const applyGate = document.getElementById('apply-gate');
+    const gateYes = document.getElementById('gate-yes');
+    const gateNo = document.getElementById('gate-no');
+
+    if (gateYes && gateNo && applyForm && applyGate) {
+      gateYes.addEventListener('click', () => {
+        window.location.href = 'index.html#kontakt';
+      });
+      gateNo.addEventListener('click', () => {
+        applyGate.style.display = 'none';
+        applyForm.style.display = '';
+        window.scrollTo({ top: applyForm.offsetTop - 80, behavior: 'smooth' });
+      });
+    }
+
+    // AJAX submit to FormSubmit with inline status
+    if (applyForm && applyStatus) {
+      applyForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        applyStatus.style.display = 'none';
+        applyStatus.textContent = '';
+        const button = applyForm.querySelector('button[type="submit"]');
+        if (button) { button.disabled = true; button.textContent = 'Skickar…'; }
+
+        try {
+          const data = new FormData(applyForm);
+          const resp = await fetch(applyForm.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+          if (resp.ok) {
+            applyStatus.style.display = 'block';
+            applyStatus.style.color = '#166534';
+            applyStatus.textContent = 'Tack för din ansökan och vi återkopplar snarast!';
+            applyForm.reset();
+          } else {
+            const json = await resp.json().catch(() => ({}));
+            applyStatus.style.display = 'block';
+            applyStatus.style.color = '#991b1b';
+            applyStatus.textContent = json.message || 'Något gick fel. Försök igen senare.';
+          }
+        } catch (err) {
+          applyStatus.style.display = 'block';
+          applyStatus.style.color = '#991b1b';
+          applyStatus.textContent = 'Nätverksfel. Försök igen.';
+        } finally {
+          if (button) { button.disabled = false; button.textContent = 'Skicka ansökan'; }
+        }
+      });
+    }
+  </script>
+</body>
+</html>
+
