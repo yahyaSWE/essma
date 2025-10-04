@@ -31,11 +31,13 @@
       <h1 class="display-6" style="color:#4a4935;">Bli familjehem – Ansökan</h1>
       <p class="mb-2" style="color:#4a4935;">Fyll i formuläret nedan. Fälten följer Socialstyrelsens BRA‑FAM struktur.</p>
       <div class="mt-2" style="color:#4a4935; max-width:60ch;">
-        <p class="mb-1"><strong>Utdrag från Kronofogden:</strong> Beställ dokumentet som visar att du inte har skulder hos Kronofogden.
-        Ring <strong>0771‑73 73 00</strong> (Kundservice & växel) måndag–fredag <strong>09.00–15.00</strong> eller använd Kronofogdens e‑tjänster på
-        <a href="https://www.kronofogden.se/kontakta-oss/mejla-oss" style="color:#4a4935; text-decoration:underline;">mina sidor</a>.</p>
-        <p class="mb-0"><strong>Utdrag ur belastningsregistret:</strong> Beställ utdrag för arbete på HVB‑hem via
-        <a href="https://polisen.se/tjanster-tillstand/belastningsregistret/hvb-hem/" style="color:#4a4935; text-decoration:underline;">Polisen</a>.</p>
+        <p class="mb-1"><strong>Viktiga dokument att bifoga:</strong> 
+         <ul>
+          <li>Beställ dokumentet som visar att du inte har skulder hos Kronofogden på <a href="https://www.kronofogden.se/kontakta-oss/mejla-oss" style="color:#4a4935; text-decoration:underline;">mina sidor</a>.</li>
+          <li><p class="mb-0">Utdrag ur belastningsregistret: Beställ utdrag för arbete på HVB‑hem via
+            <a href="https://polisen.se/tjanster-tillstand/belastningsregistret/hvb-hem/" style="color:#4a4935; text-decoration:underline;">Polisen</a>.</p></li>
+         </ul>
+        </p>
       </div>
     </div>
   </header>
@@ -43,14 +45,14 @@
   <main class="py-5">
     <div class="container">
       <div id="apply-gate" class="p-4 p-lg-5 mb-4" style="background:#ffffff; border-radius:1.25rem; box-shadow:0 10px 30px rgba(0,0,0,.08);">
-        <h2 class="h4 mb-3">Har du gjort en utredning tidigare?</h2>
+        <h2 class="h4 mb-3">Har du gjort en familjehemsutredning tidigare?</h2>
         <div class="d-flex gap-3">
           <button id="gate-yes" type="button" class="btn" style="background:#8A865D; color:#fff;">Ja</button>
           <button id="gate-no" type="button" class="btn btn-outline" style="border:1px solid #8A865D; color:#4a4935;">Nej</button>
         </div>
       </div>
 
-      <form id="apply-form" action="https://formsubmit.co/johan.blomdahl90@gmail.com" method="POST" style="display:none;">
+      <form id="apply-form" action="https://formsubmit.co/info@trygghetens.se" method="POST" style="display:none;">
         <input type="hidden" name="_subject" value="Ansökan – Bli familjehem">
         <input type="hidden" name="_captcha" value="false">
 
@@ -420,7 +422,7 @@
       gateNo.addEventListener('click', () => {
         applyGate.style.display = 'none';
         applyForm.style.display = '';
-        window.scrollTo({ top: applyForm.offsetTop - 80, behavior: 'smooth' });
+        window.scrollTo({ top: applyForm.offsetTop - 80, behavior: 'auto' });
       });
     }
 
